@@ -1,0 +1,61 @@
+1. Create an XHTML page using tags to accomplish the following:
+(i) A paragraph containing text “All that glitters is not gold”. Bold face and italicize this text 
+(ii) Create equation: 𝑥 = 1/3(𝑦2 + 𝑧2 
+(iii) Put a background image to a page and demonstrate all attributes of background image.
+(iv) Create unordered list of 5 fruits and ordered list of 3 flowers
+(i) A paragraph containing text “All that glitters is not gold”. Bold face and italicize this text 
+<!DOCTYPE>
+<html>
+<head>
+<title> HTML </title>
+</head>
+<body>
+<p> <b> <i> “All that glitters is not gold” </i> </b> </p>
+</body>
+</html>
+(ii) Create equation: 𝑥 = 1/3(𝑦2 1 + 𝑧2 1)
+<!DOCTYPE>
+<html>
+<head>
+<title> Equation </title>
+</head>
+<body>  <i>x</i>=1/3(<i>y</i><sub>1</sub><sup>2</sup>+<i>z</i><sub>1</sub><sup>2</sup>)
+</body>
+</html>
+(iii) Put a background image to a page and demonstrate all attributes of background image.
+ <!DOCTYPE>
+<html>
+<head>
+<style>
+ body { background:url("C:/filname.jpg");
+ background-repeat=no-repeat; 
+background-size:cover; 
+background-position=center;}
+</style>
+</head>
+<body>
+</body>
+</html>
+(iv) Create unordered list of 5 fruits and ordered list of 3 flowers
+<!DOCTYPE>
+<html>
+<head>
+<title> HTML Lists </title>
+</head>
+<body>
+<ul>
+<h1> Unordered list of 5 fruits </h1>
+<li> Apple </li>
+<li> Orange </li>
+<li> Banana </li>
+<li> Berry </li>
+<li> Guava </li>
+</ul>
+<ol>
+<h1> Ordered list of 3 flowers </h1>
+<li> Rose </li>
+<li> Lily </li>
+<li> Jasmine </li>
+</ol>
+</body>
+</html>
