@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    /* Add some basic styling for the calculator */
+    #calculator {
+      width: 250px;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color:whitesmoke;
+    }
+    input[type="text"] { 
+      width:95%;
+      padding: 5px;
+      margin-bottom: 10px;
+      height: 35px;
+      font-size: 25px;
+      
+    }
+    input[type="button"] {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="res" readonly>
+    <table>
+      <tr>
+        <td><input type="button" value="7" onclick="Solve('7')"></td>
+        <td><input type="button" value="8" onclick="Solve('8')"></td>
+        <td><input type="button" value="9" onclick="Solve('9')"></td>
+        <td><input type="button" value="/" onclick="Solve('/')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="Solve('4')"></td>
+        <td><input type="button" value="5" onclick="Solve('5')"></td>
+        <td><input type="button" value="6" onclick="Solve('6')"></td>
+        <td><input type="button" value="-" onclick="Solve('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="Solve('1')"></td>
+        <td><input type="button" value="2" onclick="Solve('2')"></td>
+        <td><input type="button" value="3" onclick="Solve('3')"></td>
+        <td><input type="button" value="+" onclick="Solve('+')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="C" onclick="Clear()"></td>
+        <td><input type="button" value="0" onclick="Solve('0')"></td>
+        <td><input type="button" value="." onclick="Solve('.')"></td>
+        <td><input type="button" value="=" onclick="Result()"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    // Functions to handle calculator operations
+
+    function Solve(val) {
+         var v = document.getElementById('res').value +=val;
+         
+      }
+      function Result() {
+         var num1 = document.getElementById('res').value;
+         var num2 = eval(num1);
+         document.getElementById('res').value = num2;
+      }
+      function Clear() {
+         var inp = document.getElementById('res').value = '';
+         
+      }
+      function Back() {
+         var ev = document.getElementById('res') .value = ev.value.slice(0,-1);
+        
+      }
+
+  </script>
+</body>
+</html>
